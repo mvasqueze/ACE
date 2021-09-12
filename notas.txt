@@ -1,0 +1,5 @@
+Para agregar una vista es necesario
+crear un Controller de lo que se
+va a mostrar en la vista, luego 
+agregar una ruta a ese Controller en 
+en archivo URLs 
