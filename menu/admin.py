@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.contrib import admin
 from menu.Models.bdp import *
 from menu.Models.curso import *
@@ -16,3 +17,8 @@ admin.site.register(grupo)
 admin.site.register(main)
 admin.site.register(plant)
 admin.site.register(pregunta)
+=======
+from django.contrib import admin
+
+# Register your models here.
+>>>>>>> acb2a4c86aa72859cc1f921cacdf8f8f2852b75d
