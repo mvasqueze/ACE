@@ -2,25 +2,27 @@ from grupo import *
 from bdp import *
 
 class curso:
-    id_curso=0
-    nombre=0
-    profesor=0
-    grupos=[]
-    dicc={}
+    #id_curso=0
+    #nombre=0
+    #profesor=0
+    #grupos=[]
+    #dicc={}
     #Alternativa MySQL: Construir esta clase como una lista/construir otra clase que incluya objetos tipo curso
 
     def __init__(self):
-      curso.id_curso=input('Ingrese el codigo del curso a crear: \n')
-      curso.nombre=input('Ingrese el nombre de la clase: \n')
-      curso.profesor=input('Ingrese el nombre del profesor encargado de la clase: \n')
+      self.grupos = []
+      self.dicc = {}
+      self.id_curso=input('Ingrese el codigo del curso a crear: \n')
+      self.nombre=input('Ingrese el nombre de la clase: \n')
+      self.profesor=input('Ingrese el nombre del profesor encargado de la clase: \n')
       n=int(input('¿Cuántos grupos desea crear dentro de este curso? \n'))
-      while n>len(curso.grupos):
-       curso.grupos.append(grupo.set())
+      while n>len(self.grupos):
+        self.grupos.append(grupo())
       temp=int(input('¿Cuántos bancos de pregunta deseas crear para este curso? '))
       while temp>0:
         name=input('Ingrese el nombre del banco (el tema) ')
         lPlantillas=bdp.set()
-        curso.dicc[name] = lPlantillas
+        self.dicc[name] = lPlantillas
         temp=temp-1
       #return curso.id_curso, curso.nombre
     
@@ -28,7 +30,7 @@ class curso:
     def get(curso):
       print("Estos son los grupos disponibles de este curso: ")
       for i in range(len(curso.grupos)):
-       print(curso.grupos[i]) #HACER QUE IMPRIMA SOLO EL NOMBRE
+       print(curso.grupos[i].id_grupo) #HACER QUE IMPRIMA SOLO EL NOMBRE
       
       print('Estos son los bancos de pregunta disponibles en este curso: ')
       for h in range(len(curso.dicc.keys())):

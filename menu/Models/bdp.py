@@ -2,24 +2,26 @@
 from plant import *
 
 class bdp:
-  nombre=""
-  Lista_plantillas=[]
+  #nombre=""
+  #Lista_plantillas=[]
   #insertar a la base de datos
   
 #-plants: id, tema, enunciado, voids, respuestas correctas, respuestas relleno
   def set():
     #get de pregunta???
     #bdp.nombre=input('Ingrese el nombre del banco (el tema) ')
+    Lista_plantillas=[]
     bucle = False
     var=0
     while bucle== False: 
       var=int(input('Ingrese 1 si quiere añandir una plantilla, ingrese 2 si quiere parar de añadir plantillas'))
       if var==1:
-        planta=plant()
-        bdp.Lista_plantillas.append(planta)
+        #bdp.Lista_plantillas.append(plant())
+        Lista_plantillas.append(plant())
       if var==2:
         bucle = True
-    return bdp.Lista_plantillas 
+    #return bdp.Lista_plantillas 
+    return Lista_plantillas 
 
     #dicc=[diccCalculo{}, diccCalculo2{}]
 
