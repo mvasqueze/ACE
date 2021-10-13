@@ -1,10 +1,10 @@
 class plant:
-  #ID_plantilla = ""
+  ID_plantilla = ""
   #incorrectas=[]
-  #enunciado=""
-  #oyr={}
-  #plantilla=()
-  #(id, oyr)
+  enunciado=""
+  oyr={}
+  plantilla=()
+  ('id', 'oyr')
   #plantilla[1].oyr[num]
 
   def __init__ (self):
