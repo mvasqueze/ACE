@@ -4,15 +4,15 @@ from random import sample, shuffle
 
 class pregunta:
   #-Pregunta debe ser una clase: Tema, id, respuesta correcta, respuestas incorrectas, enunciado. Funciones: ¿get?
-  #id_pregunta=''
-  #tema=''
-  #enunciado=''
-  #preg=''
-  #respuestaC=''
+  id_pregunta=''
+  tema=''
+  enunciado=''
+  preg=''
+  respuestaC=''
   #respuestaI=[]
-  #puntaje=0
+  puntaje=0
   #plantillasTemp=[]
-  #plantilla= ''
+  plantilla= ''
   
 #Cuando se ingrese al curso, se guarda el nombre/id en un atributo de pregunta
 # y desde pregunta se mira una forma de acceder al dir de ese grupo y 
